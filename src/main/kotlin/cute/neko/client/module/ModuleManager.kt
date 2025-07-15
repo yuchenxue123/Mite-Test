@@ -12,6 +12,7 @@ import cute.neko.client.module.player.ModuleNoFall
 import cute.neko.client.module.player.ModuleSprint
 import cute.neko.client.module.render.ModuleBrightness
 import cute.neko.client.module.render.ModuleClickScreen
+import cute.neko.client.module.render.ModuleNotification
 
 /**
  * @author yuchenxue
@@ -36,6 +37,7 @@ object ModuleManager : EventListener {
 
             ModuleBrightness,
             ModuleClickScreen,
+            ModuleNotification,
         )
     }
 
