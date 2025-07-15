@@ -1,0 +1,79 @@
+plugins {
+    id 'fml-loom' version '1.4.5'
+    id("org.jetbrains.kotlin.jvm") version("${kotlin_version}")
+}
+
+version = project.mod_version
+group = project.maven_group
+
+base {
+    archivesName = project.archives_base_name
+}
+
+repositories {
+    mavenLocal()
+    maven { url 'https://jitpack.io' }
+}
+
+loom {
+    accessWidenerPath = file("src/main/resources/neko.accesswidener")
+    mergedMinecraftJar()
+    setFML(new File("libs\\FishModLoader-v3.4.1.jar"))
+    mods {
+        "Hack" {
+            sourceSet sourceSets.main
+        }
+    }
+
+}
+
+runClient {
+    args("--username", "yuchenxue", "--session", "a.a.a.a", "--width", 854, "--height", 480)
+}
+
+configurations {
+    libs
+}
+
+dependencies {
+    minecraft "com.mojang:minecraft:${project.minecraft_version}"
+    mappings loom.fmlMCPMappings()
+    modImplementation "net.fabricmc:fabric-loader:${project.loader_version}"
+
+    libs(implementation "org.jetbrains.kotlin:kotlin-stdlib:${kotlin_version}")
+    libs(implementation "org.joml:joml:1.10.8")
+
+    implementation files(loom.getFML().toPath())
+}
+
+processResources {
+    inputs.property "version", project.version
+
+    filesMatching("fml.mod.json") {
+        expand "version": project.version
+    }
+
+    // put your out dependencies
+    from {
+        configurations.libs.collect {
+            it.isDirectory() ? it : zipTree(it)
+        }
+    } {
+        exclude("META-INF/")
+    }
+}
+
+tasks.withType(JavaCompile).configureEach {
+    it.options.release = 17
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_17
+    targetCompatibility = JavaVersion.VERSION_17
+}
+
+kotlin {
+    compilerOptions {
+        jvmToolchain(17)
+    }
+}
