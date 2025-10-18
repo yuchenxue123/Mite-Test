@@ -10,11 +10,6 @@ import org.spongepowered.asm.mixin.Mixin;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 @Mixin(RendererLivingEntity.class)
 public class MixinLivingEntityRenderer {
 

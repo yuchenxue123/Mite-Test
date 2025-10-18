@@ -1,10 +1,5 @@
 package cute.neko.client.ui
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 object Instance {
     const val BUTTON_WIDTH = 100
     const val BUTTON_HEIGHT = 20

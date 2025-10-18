@@ -5,19 +5,16 @@ import cute.neko.client.event.events.KeyPressEvent
 import cute.neko.client.event.handle
 import cute.neko.client.module.combat.ModuleAntiVelocity
 import cute.neko.client.module.combat.ModuleKillAura
+import cute.neko.client.module.movement.ModuleNoSlow
 import cute.neko.client.module.player.ModuleFastBreak
 import cute.neko.client.module.player.ModuleFastPlace
 import cute.neko.client.module.player.ModuleFlight
 import cute.neko.client.module.player.ModuleNoFall
 import cute.neko.client.module.player.ModuleSprint
+import cute.neko.client.module.render.ModuleArraylist
 import cute.neko.client.module.render.ModuleBrightness
 import cute.neko.client.module.render.ModuleClickScreen
 import cute.neko.client.module.render.ModuleNotification
-
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
 
 object ModuleManager : EventListener {
 
@@ -30,14 +27,16 @@ object ModuleManager : EventListener {
 
             ModuleFlight,
             ModuleNoFall,
-            ModuleAntiVelocity,
             ModuleSprint,
             ModuleFastBreak,
             ModuleFastPlace,
 
+            ModuleNoSlow,
+
             ModuleBrightness,
             ModuleClickScreen,
             ModuleNotification,
+            ModuleArraylist,
         )
     }
 

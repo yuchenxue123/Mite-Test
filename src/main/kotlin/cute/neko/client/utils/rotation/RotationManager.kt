@@ -9,11 +9,6 @@ import cute.neko.client.utils.client.mc
 import cute.neko.client.utils.extension.rotation
 import java.util.PriorityQueue
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 object RotationManager : EventListener {
 
     private val requests = PriorityQueue<RotationRequest>(

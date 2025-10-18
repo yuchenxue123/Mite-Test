@@ -1,16 +1,10 @@
 package cute.neko.client.utils.extension
 
 import net.minecraft.Vec3
-import org.joml.Vector3d
 import org.joml.Vector4f
 import java.math.BigDecimal
 import java.math.RoundingMode
 import kotlin.math.round
-
-/**
- * @author yuchenxue
- * @date 2025/05/06
- */
 
 fun Double.decimals(n: Int): Double {
     val bigDecimal = BigDecimal(this)

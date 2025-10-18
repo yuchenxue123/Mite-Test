@@ -16,11 +16,6 @@ import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 import java.util.Queue;
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 @Mixin(TcpConnection.class)
 public abstract class MixinTcpConnection {
 

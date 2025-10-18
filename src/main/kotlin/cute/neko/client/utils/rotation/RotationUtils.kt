@@ -13,11 +13,6 @@ import net.minecraft.Vec3
 import kotlin.math.atan2
 import kotlin.math.sqrt
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 object RotationUtils {
 
     fun toRotation(vec: Vec3, fromEntity: Entity = mc.thePlayer!!): Rotation {

@@ -1,19 +1,27 @@
 {
-	"schemaVersion": 1,
-	"id": "hellofml",
-	"version": "${version}",
-	"depends": {
-		"fishmodloader": ">=3.2.1"
-	},
-	"environment": "*",
-	"name": "HelloFML",
-	"description": "",
-	"authors": ["Debris","FlyBird"],
-	"entrypoints": {
-
-	},
-	"mixins": [
-		"neko.mixins.json"
-	],
-	"accessWidener": "neko.accesswidener"
+  "schemaVersion": 1,
+  "id": "${id}",
+  "name": "${name}",
+  "version": "${version}",
+  "description": "${description}",
+  "authors": [
+    "yuchenxue"
+  ],
+  "depends": {
+    "fishmodloader": ">=3.4.1",
+    "kotlin-language": ">=1.0.1"
+  },
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      {
+        "adapter": "kotlin",
+        "value": "cute.neko.client.Initializer"
+      }
+    ]
+  },
+  "mixins": [
+    "long.mixins.json"
+  ],
+  "accessWidener": "${widener}"
 }

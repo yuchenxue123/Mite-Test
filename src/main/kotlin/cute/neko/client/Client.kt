@@ -2,11 +2,7 @@ package cute.neko.client
 
 import cute.neko.client.module.ModuleManager
 import cute.neko.client.ui.ClickScreen
-
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
+import cute.neko.client.ui.font.Fonts
 
 object Client {
 
@@ -16,6 +12,8 @@ object Client {
         ModuleManager
 
         ClickScreen
+
+        Fonts
 
         loaded = true
     }

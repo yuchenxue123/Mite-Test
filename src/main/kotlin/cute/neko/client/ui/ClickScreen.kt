@@ -4,11 +4,6 @@ import cute.neko.client.module.Category
 import cute.neko.client.ui.Instance.BUTTON_WIDTH
 import net.minecraft.GuiScreen
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 object ClickScreen : GuiScreen() {
 
     private val displays = mutableListOf<CategoryDisplay>()

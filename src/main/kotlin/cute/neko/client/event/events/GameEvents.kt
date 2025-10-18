@@ -4,11 +4,6 @@ import cute.neko.client.event.CancellableEvent
 import cute.neko.client.event.Event
 import net.minecraft.Packet
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 object GameLoopEvent : Event
 
 object GameTickEvent : Event

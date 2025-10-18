@@ -13,11 +13,6 @@ import net.minecraft.EntityLivingBase
 import net.minecraft.EntityPlayer
 import org.lwjgl.input.Keyboard
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 object ModuleKillAura : Module(
     name = "KillAura",
     category = Category.COMBAT,

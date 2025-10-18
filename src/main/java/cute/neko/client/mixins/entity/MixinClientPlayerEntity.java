@@ -13,13 +13,8 @@ import org.spongepowered.asm.mixin.injection.Inject;
 import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 @Mixin(EntityClientPlayerMP.class)
-public abstract class MixinClientPlayerEntity extends MixinAbstractClientPlayer {
+public abstract class MixinClientPlayerEntity extends MixinClientPlayer {
 
     @Unique
     private PlayerMotionEvent.Pre playerMotionEvent;

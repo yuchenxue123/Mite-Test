@@ -4,11 +4,6 @@ import net.minecraft.EntityClientPlayerMP
 import net.minecraft.Minecraft
 import net.minecraft.WorldClient
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 val mc: Minecraft
     inline get() = Minecraft.getMinecraft()
 

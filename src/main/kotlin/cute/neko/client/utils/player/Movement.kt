@@ -10,11 +10,6 @@ import kotlin.math.cos
 import kotlin.math.sin
 import kotlin.math.sqrt
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 object Movement : EventListener {
 
     val speed: Float

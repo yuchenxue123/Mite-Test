@@ -1,16 +1,12 @@
 package cute.neko.client.ui
 
+import cute.neko.client.ui.font.Fonts
 import cute.neko.client.utils.client.mc
 import net.minecraft.FontRenderer
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 interface Screen {
-    val font: FontRenderer
-        get() = mc.fontRenderer
+    val font
+        get() = Fonts.ARIAL_18
 
     fun render(mouseX: Int, mouseY: Int, deltaTime: Float) {}
 

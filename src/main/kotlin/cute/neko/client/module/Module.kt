@@ -7,11 +7,6 @@ import cute.neko.client.utils.client.Accessor
 import cute.neko.client.utils.client.chat
 import org.lwjgl.input.Keyboard
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 open class Module(
     val name: String,
     val category: Category,

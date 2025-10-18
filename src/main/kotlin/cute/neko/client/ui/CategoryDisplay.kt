@@ -7,11 +7,6 @@ import cute.neko.client.ui.Instance.isHovered
 import cute.neko.client.utils.render.RenderUtils
 import java.awt.Color
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 class CategoryDisplay(val category: Category, x: Int, y: Int) : Screen {
 
     var renderX = x
@@ -46,8 +41,8 @@ class CategoryDisplay(val category: Category, x: Int, y: Int) : Screen {
         val text = category.name
         font.drawString(
             text,
-            renderX + (BUTTON_WIDTH - font.getStringWidth(text)) / 2,
-            renderY + (BUTTON_HEIGHT - font.FONT_HEIGHT) / 2,
+            renderX + (BUTTON_WIDTH - font.getStringWidth(text)) / 2f,
+            renderY + (BUTTON_HEIGHT - font.height) / 2f,
             Color.WHITE.rgb
         )
 

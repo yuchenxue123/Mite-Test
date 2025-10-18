@@ -5,11 +5,6 @@ import cute.neko.client.event.handle
 import cute.neko.client.module.Category
 import cute.neko.client.module.Module
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 object ModuleFastBreak : Module(
     name = "FastBreak",
     category = Category.PLAYER,

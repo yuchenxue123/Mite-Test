@@ -8,11 +8,6 @@ import cute.neko.client.utils.client.chat
 import cute.neko.client.utils.render.RenderUtils
 import java.awt.Color
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 class ModuleButton(val module: Module) : Screen {
 
     private var x = 0
@@ -36,8 +31,8 @@ class ModuleButton(val module: Module) : Screen {
         val text = module.name
         font.drawString(
             text,
-            x + (BUTTON_WIDTH - font.getStringWidth(text)) / 2,
-            y + (BUTTON_HEIGHT - font.FONT_HEIGHT) / 2,
+            x + (BUTTON_WIDTH - font.getStringWidth(text)) / 2f,
+            y + (BUTTON_HEIGHT - font.height) / 2f,
             Color.WHITE.rgb
         )
     }

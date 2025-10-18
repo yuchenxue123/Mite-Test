@@ -1,10 +1,5 @@
 package cute.neko.client.module
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 enum class Category {
     COMBAT,
     PLAYER,

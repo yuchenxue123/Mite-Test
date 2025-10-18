@@ -5,11 +5,6 @@ import cute.neko.client.utils.extension.rotation
 import net.minecraft.EntityPlayer
 import kotlin.math.roundToInt
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 data class Rotation(
     var yaw: Float,
     var pitch: Float,

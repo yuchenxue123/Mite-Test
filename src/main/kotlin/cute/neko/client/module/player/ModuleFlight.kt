@@ -8,11 +8,6 @@ import cute.neko.client.module.Module
 import cute.neko.client.utils.player.Movement
 import org.lwjgl.input.Keyboard
 
-/**
- * @author yuchenxue
- * @date 2025/07/15
- */
-
 object ModuleFlight : Module(
     name = "Flight",
     category = Category.PLAYER,

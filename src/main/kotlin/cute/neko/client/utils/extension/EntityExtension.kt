@@ -6,11 +6,6 @@ import net.minecraft.AxisAlignedBB
 import net.minecraft.Entity
 import net.minecraft.Vec3
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 val Entity.eyes: Vec3
     get() = getPositionEyes(mc.timer.renderPartialTicks)
 

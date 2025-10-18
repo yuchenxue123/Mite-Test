@@ -1,10 +1,5 @@
 package cute.neko.client.utils.client
 
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
-
 object Priority {
 
     // event 0-10

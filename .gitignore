@@ -25,3 +25,9 @@ run/
 
 # macos
 *.DS_Store
+
+# kotlin
+.kotlin/
+
+# other
+config.properties

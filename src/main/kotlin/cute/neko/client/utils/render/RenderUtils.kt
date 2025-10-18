@@ -1,25 +1,6 @@
 package cute.neko.client.utils.render
 
-import net.minecraft.Gui
-import net.minecraft.Tessellator
-import org.lwjgl.opengl.GL11.GL_BLEND
-import org.lwjgl.opengl.GL11.GL_LINE_SMOOTH
-import org.lwjgl.opengl.GL11.GL_ONE_MINUS_SRC_ALPHA
-import org.lwjgl.opengl.GL11.GL_QUADS
-import org.lwjgl.opengl.GL11.GL_SRC_ALPHA
-import org.lwjgl.opengl.GL11.GL_TEXTURE_2D
-import org.lwjgl.opengl.GL11.glBegin
-import org.lwjgl.opengl.GL11.glBlendFunc
-import org.lwjgl.opengl.GL11.glColor4f
-import org.lwjgl.opengl.GL11.glDisable
-import org.lwjgl.opengl.GL11.glEnable
-import org.lwjgl.opengl.GL11.glEnd
-import org.lwjgl.opengl.GL11.glVertex2f
-
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
+import org.lwjgl.opengl.GL11.*
 
 object RenderUtils {
 

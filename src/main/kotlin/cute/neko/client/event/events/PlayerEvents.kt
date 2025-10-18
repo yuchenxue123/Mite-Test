@@ -1,13 +1,6 @@
 package cute.neko.client.event.events
 
 import cute.neko.client.event.Event
-import cute.neko.client.utils.rotation.Rotation
-import org.joml.Vector3d
-
-/**
- * @author yuchenxue
- * @date 2025/07/14
- */
 
 object PlayerTickEvent : Event
 
