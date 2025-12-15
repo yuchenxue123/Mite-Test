@@ -11,7 +11,7 @@
     "fishmodloader": ">=3.4.1",
     "kotlin-language": ">=1.0.1"
   },
-  "environment": "*",
+  "environment": "client",
   "entrypoints": {
     "main": [
       {
